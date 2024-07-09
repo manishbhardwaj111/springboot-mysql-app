@@ -11,6 +11,8 @@ This project demonstrates basic CRUD (Create, Read, Update, Delete) operations u
 
 ## Setup Instructions
 
+docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=emp-db -e MYSQL_USER=manish -e MYSQL_PASSWORD=manish -p 3306:3306 -d mysql:latest
+
 ### Prerequisites
 
 - JDK 21 or later installed
