@@ -11,17 +11,16 @@ This project demonstrates basic CRUD (Create, Read, Update, Delete) operations u
 
 ## Setup Instructions
 
-docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=emp-db -e MYSQL_USER=manish -e MYSQL_PASSWORD=manish -p 3306:3306 -d mysql:latest
-
 ### Prerequisites
 
-- JDK 21 or later installed
-- MySQL installed and running locally or on a server
+- JDK 17 or later installed
+- Docker installed and running
 
-### Steps to Run
+### Docker Setup for MySQL
 
-1. **Clone the repository**
+1. **Run MySQL Docker Container**
+
+   Run the following command to start a MySQL Docker container with necessary environment variables:
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=emp-db -e MYSQL_USER=manish -e MYSQL_PASSWORD=manish -p 3306:3306 -d mysql:latest
