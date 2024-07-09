@@ -13,7 +13,7 @@ This project demonstrates basic CRUD (Create, Read, Update, Delete) operations u
 
 ### Prerequisites
 
-- JDK 8 or later installed
+- JDK 21 or later installed
 - MySQL installed and running locally or on a server
 
 ### Steps to Run
